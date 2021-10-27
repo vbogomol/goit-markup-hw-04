@@ -51,7 +51,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: orange solid 2px;*/
 }
 
 img {
@@ -279,6 +278,17 @@ img {
   width: 270px;
 }
 
+.methods-icon {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--inactive-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Activities section */
 
 .activities {
@@ -332,9 +342,85 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
   text-align: center;
+  margin-bottom: 16px;
 }
 
-/* portfolio */
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--active-color);
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white);
+}
+
+/* Client section */
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-item {
+  display: block;
+  height: 92px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-logo {
+  fill: #afb1b8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--active-color);
+}
+
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+  fill: var(--active-color);
+}
+
+/* Portfolio */
 
 .button-list {
   display: flex;
