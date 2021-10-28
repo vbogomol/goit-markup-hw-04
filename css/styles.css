@@ -183,7 +183,6 @@ img {
 
 .contact-icon {
   margin-right: 10px;
-  vertical-align: middle;
   fill: currentColor;
 }
 
@@ -196,7 +195,6 @@ img {
 
 .overlay {
   padding: 200px 0;
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -207,7 +205,7 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-bgd.jpg);
-  border-style: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -233,7 +231,7 @@ img {
 }
 
 .hero-btn {
-  display: inline-block;
+  border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -462,7 +460,7 @@ img {
 }
 
 .portfolio-item {
-  width: calc((100% - 60) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--white);
@@ -499,8 +497,12 @@ img {
   padding: 20px 24px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -514,6 +516,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-left {
@@ -549,7 +552,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
-  padding-top: 12px;
   margin-bottom: 20px;
 }
 
