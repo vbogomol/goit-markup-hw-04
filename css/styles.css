@@ -176,7 +176,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
